@@ -1,6 +1,12 @@
 html {
   color: rgba(39, 45, 55, 1);
 }
+img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+
 .py-6 {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -30,10 +36,9 @@ html {
 .p-32 {
   padding: 2rem;
 }
-/* 
-.newtools__leftcontent-text {
-  width: 80%;
-} */
+.pb-64 {
+  padding-bottom: 4rem;
+}
 
 .newtools__leftcontent-text h3,
 .newtools__rightcontent-text h3 {
@@ -67,7 +72,201 @@ html {
   align-items: flex-start;
 }
 .newtools__leftcontent-image,
-.newtools__rightcontent-image {
+.newtools__rightcontent-image,
+.latestblog__content-cardimg {
   display: inline-block;
   line-height: 0;
+}
+.newtools__leftcontent-image img,
+.newtools__rightcontent-image img,
+.latestblog__content-cardimg img {
+  display: block;
+  width: 100%;
+  object-fit: contain;
+}
+
+/* section2 */
+
+.latestblog__content-card {
+  width: 30.535%;
+}
+.container {
+  padding-left: 0;
+  padding-right: 0;
+}
+a {
+  text-decoration: none;
+}
+
+.latestblog__header h2 {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  letter-spacing: -0.2;
+  text-align: center;
+}
+.latestblog__header h2::after {
+  content: "";
+  display: block;
+  width: 11%;
+  height: 0.3rem;
+  background-color: rgba(217, 217, 217, 1);
+  margin: 0.8rem auto 0;
+}
+.pb-24 {
+  padding-bottom: 1.5rem;
+}
+.latestblog__content-card {
+  padding-bottom: 1.5rem;
+}
+
+.latestblog__content-cardtext p {
+  font-weight: 500;
+  font-size: 0.8rem;
+  line-height: 1.25rem;
+  letter-spacing: -0.1px;
+  color: rgba(95, 109, 126, 1);
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0;
+}
+.latestblog__content-cardtext article {
+  font-weight: 600;
+  font-size: 1.375rem;
+  line-height: 1.875rem;
+  letter-spacing: -0.1px;
+  padding-bottom: 1rem;
+}
+.latestblog__content-cardtext a {
+  font-weight: 600;
+  font-size: 0.9rem;
+  line-height: 1.375px;
+  letter-spacing: 0px;
+  color: rgba(67, 126, 247, 1);
+  padding-right: 0.375rem;
+}
+.latestblog__content-cardtext a img {
+  padding-left: 0.375rem;
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    width: 95%;
+  }
+  .newtools__leftcontent {
+    width: 93%;
+  }
+  .newtools__rightcontent {
+    width: 93%;
+  }
+  .newtools__rightcontent-wrapper {
+    flex-direction: column;
+  }
+  .overflowh3 {
+    display: none;
+  }
+  .newtools__leftcontent-image,
+  .newtools__rightcontent-image,
+  .latestblog__content-cardimg {
+    width: 100%;
+  }
+  .newtools__leftcontent-image img,
+  .newtools__rightcontent-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  .newtools__rightcontent-text {
+    padding-left: 0.5rem !important;
+  }
+  .latestblog__content-cards {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100%;
+  }
+  .latestblog__content-card {
+    width: 99%;
+  }
+
+  .latestblog__content-cardimg img,
+  .newtools__rightcontent-image img {
+    width: 100%;
+    height: 11.5rem;
+    object-fit: fill;
+  }
+}
+
+.py-sm-32 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 701px) and (max-width: 1000px) {
+  .container {
+    width: 99%;
+  }
+  .newtools__leftcontent {
+    width: 100%;
+  }
+  .newtools__rightcontent {
+    width: 100%;
+  }
+  .newtools__rightcontent-wrapper {
+    flex-direction: row !important;
+  }
+  .overflowh3 {
+    display: none;
+  }
+  .newtools__leftcontent {
+    width: 95%;
+  }
+  .newtools__rightcontent {
+    width: 95%;
+  }
+  h3 {
+    display: inline;
+  }
+  .overflowh3 {
+    display: inline !important;
+  }
+  .newtools__leftcontent-image,
+  .latestblog__content-cardimg {
+    width: 100%;
+  }
+  .newtools__rightcontent-image {
+    width: 80%;
+  }
+  .newtools__leftcontent-image img,
+  .newtools__rightcontent-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  .newtools__rightcontent-text {
+    padding-left: 0.5rem !important;
+  }
+  .latestblog__content-cards {
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: space-between !important;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 93%;
+    margin: 0 auto;
+  }
+  .latestblog__content {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .latestblog__content-card {
+    width: 48%;
+  }
+
+  .latestblog__content-cardimg img,
+  .newtools__rightcontent-image img {
+    width: 100%;
+    height: 11.5rem;
+    object-fit: fill;
+  }
 }
