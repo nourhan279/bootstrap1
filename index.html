@@ -13,80 +13,255 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <section class="newtools">
-      <div
-        class="container d-flex flex-xl-row flex-lg-row py-6 gap-40 mx-auto px-2rem d-sm-flex flex-column px-sm-3 align-items-sm-center gap-32 py-sm-32"
-      >
-        <div class="newtools__leftcontent pe-20 pe-md-3 pe-lg-4 pe-sm-2">
-          <div class="newtools__leftcontent-image pb-3">
-            <img src="assets/img/Tooltip.png" alt="table image" />
-          </div>
-          <div class="newtools__leftcontent-text">
-            <h3>
-              Reach your users with new tools.
-              <h3 class="overflowh3 d-sm-none">
-                Reach your users with new tools. Reach your users with new
-                tools.
-              </h3>
-            </h3>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-light">
+      <div class="container-fluid px-5">
+        <a class="navbar-brand" href="#"
+          ><img src="assets/img/Company Logo2.svg" alt="company logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Our Products</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Resources
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacts</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <button class="btn signup" type="button">Sign Up</button>
+            <button
+              class="btn button-addon2"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop"
+            >
+              Log In
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
 
-            <article class="pb-3 pt-1">
-              Efficiently unleash cross-media information without cross-media
-              value. Quickly maximize.Efficiently unleash cross-media
-              information without cross-media value. Quickly
-              maximize.Efficiently unleash cross-media.
-            </article>
-            <span>25 Apr 2022</span>
+    <!-- hero -->
+    <section class="hero">
+      <div class="container">
+        <div class="row">
+          <div class="hero__content mx-auto col-6 text-center">
+            <h2 class="pb-2">1% OF THE INDUSTRY</h2>
+            <h3>Hype got you here.</h3>
+            <h3>Stay for the support.</h3>
           </div>
         </div>
-        <div
-          class="newtools__rightcontent d-flex flex-column gap-32 d-sm-flex flex-sm-column"
-        >
-          <div
-            class="newtools__rightcontent-wrapper d-flex flex-sm-column flex-md-row"
-          >
-            <div class="newtools__rightcontent-image">
-              <img src="assets/img/Container.png" alt="table and chair image" />
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Log In</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+                <div id="emailHelp" class="form-text">
+                  We'll never share your email with anyone else.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                />
+              </div>
+
+              <button
+                type="submit"
+                data-bs-dismiss="modal"
+                class="btn btn-primary"
+              >
+                Log In
+              </button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- section2 -->
+    <section class="welcomeDegitalUpper">
+      <div class="container">
+        <div class="row py-64 mx-auto">
+          <div class="col-12 col-lg-6">
+            <h3 class="pb-4">
+              Welcome to your new digital reality that will rock your world.
+            </h3>
+            <p>
+              Let us help you take you from zero to serious business and beyond.
+            </p>
+            <p>
+              Our no-strings attached free trial lets you test our product
+              today.
+            </p>
+          </div>
+          <div class="col-5 offset-1 leftform pt-5">
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter Your email"
+                aria-label="Enter email"
+                aria-describedby="button-addon2"
+              />
+              <button class="btn button-addon2" type="button">Submit</button>
+            </div>
+            <p class="pt-2">Subscribe to our newsletter</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section 3 -->
+    <section class="newtools">
+      <div class="container py-6 mx-auto px-2rem">
+        <div class="row row-cols-1 g-3 row-cols-lg-2 g-lg-4">
+          <div class="newtools__leftcontent">
+            <div class="newtools__leftcontent-image">
+              <img src="assets/img/Tooltip.png" alt="table image" />
+            </div>
+            <div class="newtools__leftcontent-text">
+              <h3 class="pt-24">
+                Reach your users with new tools. Reach your users with new
+                tools. Reach your users with newtools.
+              </h3>
+
+              <article class="pt-3">
+                Efficiently unleash cross-media information without cross-media
+                value. Quickly maximize.Efficiently unleash cross-media
+                information without cross-media value. Quickly
+                maximize.Efficiently unleash cross-media.
+              </article>
+              <span class="pt-3 d-inline-block">25 Apr 2022</span>
+            </div>
+          </div>
+          <div class="newtools__rightcontent d-flex flex-column">
+            <div
+              class="newtools__rightcontent-wrapper d-lg-flex flex-lg-row flex-column"
+            >
+              <div class="newtools__rightcontent-image">
+                <img
+                  src="assets/img/Container.png"
+                  alt="table and chair image"
+                />
+              </div>
+              <div class="newtools__rightcontent-text">
+                <h3>Reach your users with new tools</h3>
+                <article>
+                  Efficiently unleash cross-media information without
+                  cross-media value. Quickly maximize.
+                </article>
+                <span>25 Apr 2022</span>
+              </div>
             </div>
             <div
-              class="newtools__rightcontent-text ps-4 ps-sm-2 ps-md-3 ps-lg-4"
+              class="newtools__rightcontent-wrapper d-lg-flex flex-lg-row flex-column"
             >
-              <h3>Reach your users with new tools</h3>
-              <article class="pb-2">
-                Efficiently unleash cross-media information without cross-media
-                value. Quickly maximize.
-              </article>
-              <span>25 Apr 2022</span>
+              <div class="newtools__rightcontent-image">
+                <img src="assets/img/Container2.png" alt="leafs image" />
+              </div>
+              <div class="newtools__rightcontent-text">
+                <h3>Faster ways to reach your customer</h3>
+                <article>
+                  Completely synergize resource taxing relationships via premier
+                  niche markets.
+                </article>
+                <span>25 Apr 2022 - Blog theme</span>
+              </div>
             </div>
-          </div>
-          <div
-            class="newtools__rightcontent-wrapper d-flex flex-sm-column flex-md-row"
-          >
-            <div class="newtools__rightcontent-image">
-              <img src="assets/img/Container2.png" alt="leafs image" />
-            </div>
-            <div class="newtools__rightcontent-text ps-4 ps-sm-2">
-              <h3>Faster ways to reach your customer</h3>
-              <article class="pb-2">
-                Completely synergize resource taxing relationships via premier
-                niche markets.
-              </article>
-              <span>25 Apr 2022 - Blog theme</span>
-            </div>
-          </div>
-          <div
-            class="newtools__rightcontent-wrapper d-flex flex-sm-column flex-md-row"
-          >
-            <div class="newtools__rightcontent-image">
-              <img src="assets/img/Container3.png" alt="table image" />
-            </div>
-            <div class="newtools__rightcontent-text ps-4 ps-sm-2">
-              <h3>Revolutionizing the Design Industry</h3>
-              <article class="pb-2">
-                Efficiently unleash cross-media information without cross-media
-                value. Quickly maximize.
-              </article>
-              <span>25 Apr 2022 - Blog theme</span>
+            <div
+              class="newtools__rightcontent-wrapper d-lg-flex flex-lg-row flex-column"
+            >
+              <div class="newtools__rightcontent-image">
+                <img src="assets/img/Container3.png" alt="table image" />
+              </div>
+              <div class="newtools__rightcontent-text">
+                <h3>Revolutionizing the Design Industry</h3>
+                <article>
+                  Efficiently unleash cross-media information without
+                  cross-media value. Quickly maximize.
+                </article>
+                <span>25 Apr 2022 - Blog theme</span>
+              </div>
             </div>
           </div>
         </div>
@@ -100,7 +275,7 @@
         </div>
         <div class="latestblog__content">
           <div
-            class="latestblog__content-cards px-2rem d-flex flex-wrap justify-content-between flex-sm-column align-items-sm-center flex-md-row flex-md-wrap justify-content-md-between"
+            class="latestblog__content-cards row row-cols-sm-1 px-sm-3 row-cols-md-2 row-cols-lg-3 px-lg-4 mx-0"
           >
             <div class="latestblog__content-card">
               <div class="latestblog__content-cardimg">
@@ -183,6 +358,131 @@
         </div>
       </div>
     </section>
+
+    <!-- section5 -->
+
+    <section class="welcomedigital">
+      <div class="container">
+        <div class="row">
+          <div class="welcomedigital__content py-64 mx-auto col-6 text-center">
+            <div id="carouselExampleIndicators" class="carousel slide">
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="assets/img/Container slider.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/img/Container slider.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer py-5 py-lg-64">
+      <div class="container">
+        <div class="row g-3 g-lg-5 pb-64">
+          <div class="col-12 col-lg-3">
+            <a href="#">
+              <img src="assets/img/Company Logo.svg" alt="company logo" />
+            </a>
+            <p class="pt-3 pb-3">
+              Generate outside the box thinking with the possibility to targtet
+              the low.
+            </p>
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter email..."
+                aria-label="Enter email"
+                aria-describedby="button-addon2"
+              />
+              <button class="btn btn-footer" type="button">Submit</button>
+            </div>
+          </div>
+
+          <div class="col-2 offset-1">
+            <h4>Why Choose Us?</h4>
+            <p class="pb-12">Scale</p>
+            <p class="pb-12">Solutions</p>
+            <p class="pb-12">Our Competition</p>
+            <p class="pb-12">Channels</p>
+            <p class="pb-12">Events</p>
+            <p class="pb-12">Watch the Demo</p>
+          </div>
+
+          <div class="col-2 offset-1">
+            <h4>Company</h4>
+            <p class="pb-12">Leadership</p>
+            <p class="pb-12">Careers</p>
+            <p class="pb-12">Investor Relations</p>
+            <p class="pb-12">Media Kit</p>
+          </div>
+
+          <div class="col-2 offset-1">
+            <h4>Resources</h4>
+            <p class="pb-12">Community</p>
+            <p class="pb-12">Events</p>
+            <p class="pb-12">Help Center</p>
+            <p class="pb-12">Partners</p>
+          </div>
+        </div>
+
+        <div class="row copyrights row-cols-1 text-center">
+          <p>© 2023 Lookscout. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
