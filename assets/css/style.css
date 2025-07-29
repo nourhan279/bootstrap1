@@ -8,7 +8,7 @@ html {
 }
 img {
   width: auto;
-  max-width: 100%;
+
   height: auto;
 }
 h2,
@@ -282,3 +282,29 @@ a {
   line-height: 3.75rem;
   letter-spacing: -0.1px;
 }
+@media screen and (max-width: 768px) {
+  /* html {
+    font-size: 0.75rem !important;
+  } */
+  .newtools__rightcontent-image {
+    width: 100%;
+    height: 11.56rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  .newtools__rightcontent-image img {
+    width: 100%;
+    height: 11.56rem;
+    border-radius: 0.5rem;
+    object-fit: cover;
+  }
+  .latestblog__content-cardimg img {
+    width: 100%;
+  }
+}
+/*
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  * {
+    font-size: 0.875rem;
+  }
+} */
